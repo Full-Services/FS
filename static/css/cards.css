@@ -669,7 +669,7 @@ body {
     .thin-line {
         width: 75%;
         height: 1px;
-        margin: 10px 0 10px auto;
+        margin: 8px 0 8px auto;
     }
 
     .contact-list {
@@ -766,7 +766,7 @@ body {
     .thin-line {
         width: 75%;
         height: 1px;
-        margin: 10px 0 10px auto;
+        margin: 6px 0 6px auto;
     }
 
     .contact-list {
@@ -886,7 +886,105 @@ body {
     .thin-line {
         width: 75%;
         height: 1px;
-        margin: 10px 0 10px auto;
+        margin: 4px 0 4px auto;
+    }
+
+    .contact-list {
+        gap: 1px;
+    }
+
+    .contact-item {
+        font-size: 0.85rem;
+        padding: 1px 5px;
+        gap: 6px;
+    }
+
+    .brand-main {
+        font-size: 2.1rem;
+        letter-spacing: 2.1px;
+    }
+
+    .brand-sub {
+        font-size: 0.90rem;
+        letter-spacing: 1.1px;
+    }
+
+    .brand-sub::before {
+        width: 100%;
+        height: 2px;
+        top: -3px;
+    }
+
+    .qr-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1px;
+        margin: 8px 0;
+    }
+
+    .qr {
+        width: 120px;
+        height: 120px;
+    }
+
+    .qr-wrap h2 {
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .qr-url {
+        font-size: 0.75rem;
+        word-break: break-all;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .card {
+        width: 96vw;
+        max-width: 640px;
+        aspect-ratio: 16 / 10;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .card-face {
+        height: 100%;
+    }
+
+    .front-overlay {
+        padding: 16px 18px;
+    }
+
+    .logo {
+        width: 83px;
+        top: -2px;
+        left: -2px;
+    }
+
+    .top-right {
+        top: 22px;
+        right: 18px;
+    }
+
+    .person-name {
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+
+    .role {
+        font-size: 0.8rem;
+    }
+
+    .thin-line {
+        width: 65%;
+        height: 1px;
+        margin: 2px 0 2px auto;
     }
 
     .contact-list {
