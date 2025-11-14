@@ -17,9 +17,29 @@ document.addEventListener("DOMContentLoaded", () => {
         const dx = Math.abs(e.clientX - startX);
         const dy = Math.abs(e.clientY - startY);
 
-        // Si no hubo movimiento significativo
         if (dx < 20 && dy < 20) {
-            toggleFlip();
+            if (!e.target.closest(".contact-item")) {
+                toggleFlip();
+            }
         }
+    });
+
+    const emailButtons = document.querySelectorAll(".contact-item.email");
+    const toast = document.getElementById("copiedToast");
+
+    emailButtons.forEach(btn => {
+        btn.addEventListener("click", (e) => {
+            e.stopPropagation(); 
+            const email = btn.dataset.email;
+
+            navigator.clipboard.writeText(email);
+
+            toast.innerHTML = `<i class="fa-solid fa-check"></i> Correo copiado`;
+            toast.classList.add("show");
+
+            setTimeout(() => {
+                toast.classList.remove("show");
+            }, 2500);
+        });
     });
 });
