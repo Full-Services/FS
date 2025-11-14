@@ -725,3 +725,220 @@ body {
         margin: 0;
     }
 }
+
+@media (max-width: 480px) {
+    .card {
+        width: 98vw;
+        max-width: 640px;
+        aspect-ratio: 16 / 10;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .card-face {
+        height: 100%;
+    }
+
+    .front-overlay {
+        padding: 16px 18px;
+    }
+
+    .logo {
+        width: 93px;
+        top: -2px;
+        left: -2px;
+    }
+
+    .top-right {
+        top: 28px;
+        right: 18px;
+    }
+
+    .person-name {
+        font-size: 1.4rem;
+        line-height: 1;
+    }
+
+    .role {
+        font-size: 0.9rem;
+    }
+
+    .thin-line {
+        width: 75%;
+        height: 1px;
+        margin: 10px 0 10px auto;
+    }
+
+    .contact-list {
+        gap: 3px;
+    }
+
+    .contact-item {
+        font-size: 0.95rem;
+        padding: 1px 5px;
+        gap: 6px;
+    }
+
+    .brand {
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .brand-main {
+        font-size: 2.7rem;
+        letter-spacing: 2.1px;
+    }
+
+    .brand-sub {
+        font-size: 1.3rem;
+        letter-spacing: 1.2px;
+    }
+
+    .brand-sub::before {
+        width: 100%;
+        height: 2px;
+        top: -3px;
+    }
+
+    .qr-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .qr-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 6px; 
+        margin: 10px 0;
+    }
+
+    .qr {
+        width: 140px;
+        height: 140px;
+    }
+
+    .qr-wrap h2 {
+        font-size: 1rem; 
+        font-weight: 600;
+        margin: 0; 
+    }
+
+    .qr-url {
+        font-size: 0.35rem; 
+        word-break: break-all;
+        margin: 0; 
+    }
+
+    .toast {
+        top: 12px;
+        right: 12px;
+        padding: 10px 12px;
+        font-size: 0.85rem;
+        max-width: 85%;
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 95vw;
+        max-width: 640px;
+        aspect-ratio: 16 / 10;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .card-face {
+        height: 100%;
+    }
+
+    .front-overlay {
+        padding: 16px 18px;
+    }
+
+    .logo {
+        width: 83px;
+        top: -2px;
+        left: -2px;
+    }
+
+    .top-right {
+        top: 22px;
+        right: 18px;
+    }
+
+    .person-name {
+        font-size: 1.2rem;
+        line-height: 1;
+    }
+
+    .role {
+        font-size: 0.8rem;
+    }
+
+    .thin-line {
+        width: 75%;
+        height: 1px;
+        margin: 10px 0 10px auto;
+    }
+
+    .contact-list {
+        gap: 1px;
+    }
+
+    .contact-item {
+        font-size: 0.85rem;
+        padding: 1px 5px;
+        gap: 6px;
+    }
+
+    .brand-main {
+        font-size: 2.1rem;
+        letter-spacing: 2.1px;
+    }
+
+    .brand-sub {
+        font-size: 0.90rem;
+        letter-spacing: 1.1px;
+    }
+
+    .brand-sub::before {
+        width: 100%;
+        height: 2px;
+        top: -3px;
+    }
+
+    .qr-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1px;
+        margin: 8px 0;
+    }
+
+    .qr {
+        width: 120px;
+        height: 120px;
+    }
+
+    .qr-wrap h2 {
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .qr-url {
+        font-size: 0.75rem;
+        word-break: break-all;
+        margin: 0;
+    }
+}
